@@ -10,8 +10,6 @@ export class AppComponent {
     { title: 'Database', url: '/folder/Database', icon: 'paper-plane' },
     { title: 'Piano', url: '/folder/Piano', icon: 'heart' },
     { title: 'Scoring', url: '/folder/Scoring', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
   ];
   public labels = ['Tutorials', 'Database', 'Piano', 'Scoring'];
   constructor() {}
