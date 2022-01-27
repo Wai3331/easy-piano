@@ -1,0 +1,8 @@
+{
+  "name": "Easy Piano",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "069bff7d"
+}
