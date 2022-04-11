@@ -1,0 +1,29 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .image-card{
+        background-color: #979797;
+        padding: 0.8rem;
+        border-radius: 1.5rem;
+        margin-bottom: 0.5rem;
+
+        ion-img{
+            opacity: 0.8;
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+
+}
+
+.wrapper.active{
+    .image-card{
+        background-color: #3687bd;
+    }
+
+
+}

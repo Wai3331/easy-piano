@@ -1,0 +1,40 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>    
+      <ion-title>Library</ion-title>
+    </ion-buttons>
+  <!-- SEARCH BAR -->
+  <app-searchbar></app-searchbar>
+  </div>
+
+</ion-header>
+
+<ion-content>
+      <!-- CATEGORY -->
+      <div class="categories">
+        <app-category-item *ngFor="let item of categories" [item]="item" routerLink="{{item.link}}"></app-category-item>
+       </div>
+<div class="main_content_div">
+
+<ion-item routerLink ="/sheet7" detail color="primary">
+  <ion-label>The Very First Night Sheet Music Taylor Swift</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet8" detail color="primary">
+  <ion-label>Silence Sheet Music Marshmello feat Khalid</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet9" detail color="primary">
+  <ion-label>Strangers By Nature Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet10" detail color="primary">
+  <ion-label>Cry Your Heart Out Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet11" detail color="primary">
+  <ion-label>Rolling in the deep Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet12" detail color="primary">
+  <ion-label>My Little Love Sheet Music Adele</ion-label>
+</ion-item>
+</div>
+
+</ion-content>

@@ -1,0 +1,57 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>    
+      <ion-title>Musical Tutorials</ion-title>
+    </ion-buttons>
+  <!-- SEARCH BAR -->
+  <app-searchbar></app-searchbar>
+  </div>
+  <ion-segment value="Videos" >
+  <ion-segment-button routerLink="/m-tutorial-article" value="Articles">
+  <ion-label >Articles</ion-label>
+  </ion-segment-button>
+<ion-segment-button routerLink="/m-tutorial-video" value="Videos">
+<ion-label>Videos</ion-label>
+</ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card >
+    <ion-card-header>
+  <img src="assets/musicV1.gif" routerLink="/m-video1">
+
+      <ion-card-title routerLink="/m-video1">How To Read Notes (Beginner Piano Lesson)</ion-card-title>
+      <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+      <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/musicV2.gif"  routerLink="/m-video2">
+      <ion-card-title  routerLink="/m-video2">How to Read Music - Basics for Beginners - Music Theory Lesson</ion-card-title>
+      <i *ngIf="addedToFavourite1" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite1()"></i>
+      <i *ngIf="!addedToFavourite1" class="far fa-heart float-end" (click)="handleAddToFavourite1()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/musicV3.gif"  routerLink="/m-video3">
+      <ion-card-title routerLink="/m-video3">A Beginner's Guide to Music Theory</ion-card-title>
+      <i *ngIf="addedToFavourite2" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite2()"></i>
+      <i *ngIf="!addedToFavourite2" class="far fa-heart float-end" (click)="handleAddToFavourite2()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/musicV4.gif" routerLink="/m-video4">
+      <ion-card-title routerLink="/m-video4">Learn music theory in half an hour</ion-card-title>
+      <i *ngIf="addedToFavourite3" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite3()"></i>
+      <i *ngIf="!addedToFavourite3" class="far fa-heart float-end" (click)="handleAddToFavourite3()"></i>
+    </ion-card-header>
+  </ion-card>
+</div>
+
+</ion-content>

@@ -1,0 +1,66 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>    
+      <ion-title>Library</ion-title>
+    </ion-buttons>
+  <!-- SEARCH BAR -->
+  <app-searchbar></app-searchbar>
+  </div>
+
+</ion-header>
+
+<ion-content>
+      <!-- CATEGORY -->
+      <div class="categories">
+        <app-category-item *ngFor="let item of categories" [item]="item" routerLink="{{item.link}}"></app-category-item>
+       </div>
+       <!-- <div class="wrapper"  >
+        <div class="image-card">
+          <ion-img routerLink="/sheet1" [src]="assets/show-all-icon-6.jpg"></ion-img>
+          <ion-img routerLink="/sheet1" [src]="assets/classical2.png"></ion-img>
+          <ion-img routerLink="/sheet1" [src]="assets/Pop-Music-Logo-Transparent.png"></ion-img>
+        </div>
+
+      </div> -->
+<div class="main_content_div">
+
+<ion-item routerLink ="/sheet1" detail color="primary">
+  <ion-label>Nocturne Op 9 No 2</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet2" detail color="primary">
+  <ion-label>Arabesque Sheet Music Debussy Arabesque No. 1</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet3" detail color="primary">
+  <ion-label>Romance Sheet Music Kozeluch</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet4" detail color="primary">
+  <ion-label>Bagatelle Sheet Music Beethoven</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet5" detail color="primary">
+  <ion-label>Melody Sheet Music Schumann</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet6" detail color="primary">
+  <ion-label>Sonatina in G Major Sheet Music Beethoven</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet7" detail color="primary">
+  <ion-label>The Very First Night Sheet Music Taylor Swift</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet8" detail color="primary">
+  <ion-label>Silence Sheet Music Marshmello feat Khalid</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet9" detail color="primary">
+  <ion-label>Strangers By Nature Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet10" detail color="primary">
+  <ion-label>Cry Your Heart Out Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet11" detail color="primary">
+  <ion-label>Rolling in the deep Sheet Music Adele</ion-label>
+</ion-item>
+<ion-item routerLink ="/sheet12" detail color="primary">
+  <ion-label>My Little Love Sheet Music Adele</ion-label>
+</ion-item>
+</div>
+
+</ion-content>

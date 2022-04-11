@@ -1,0 +1,41 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-back-button color="light"></ion-back-button> 
+      <ion-title>Strangers By Nature</ion-title>
+      <ion-button slot="end">
+        <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+        <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+      </ion-button>
+    </ion-buttons>
+
+  </div>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Strangers p1.jpg">
+      <img src="assets/Strangers p2.jpg">
+      <img src="assets/Strangers p3.jpg">
+      <img src="assets/Strangers p4.jpg">
+
+      <ion-card-title>Song Info</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+ <p>  Title: Strangers By Nature</p>
+ <p> Artist: Adele</p>
+ <p>  Key: F Major</p>
+ <p>  Metronome: 55</p>
+ <p>  Styles:	Pop</p>
+ <p> Difficulty: Medium</p>
+ <p> Page: 4</p>
+ <iframe width="300" height="315" src="https://www.youtube.com/embed/QrohqXVn1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+</ion-content>

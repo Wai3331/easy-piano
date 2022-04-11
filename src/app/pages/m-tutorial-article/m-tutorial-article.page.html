@@ -1,0 +1,41 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>    
+      <ion-title>Musical Tutorials</ion-title>
+    </ion-buttons>
+  <!-- SEARCH BAR -->
+  <app-searchbar></app-searchbar>
+  </div>
+  <ion-segment value="Articles">
+  <ion-segment-button routerLink="/m-tutorial-article" value="Articles">
+  <ion-label>Articles</ion-label>
+  </ion-segment-button>
+<ion-segment-button routerLink="/m-tutorial-video" value="Videos">
+<ion-label>Videos</ion-label>
+</ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <span *ngIf="segId=='Articles'">
+    <div class="card_div" *ngFor="let item of articles">
+      <div class="round_image bg_image" [style.backgroundImage]="'url('+item.img +')'">
+      </div>
+      <div class="content_div">
+        <ion-label routerLink="{{item.link}}" color="#3880ff" detail class="title_lbl">{{item.name}}</ion-label>
+        <i *ngIf=item.status class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+        <i *ngIf=!item.status class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+      </div>
+    </div>
+  </span>
+  <!-- CATEGORY
+  <div class="categories">
+    <app-category-item *ngFor="let item of categories" [item]="item"></app-category-item>
+   </div> -->
+
+
+</div>
+
+</ion-content>

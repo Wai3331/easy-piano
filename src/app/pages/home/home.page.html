@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Easy Piano</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="main_content_div">
+    <div class="user_div">
+      <div class=first_div>
+        <ion-label class="welcome"><img src="assets\Easy_Piano.png" width="150" height="150"></ion-label>
+      </div>
+    </div>
+  <div class="content_div">
+    <!-- <div class="content_div animated bounceInUp"> -->
+    <ion-label class="hello_label">Hello, What do you want to do today?</ion-label>
+
+    <ion-grid fixed>
+      <ion-row>
+        <ion-col size="6" >
+
+          <div class="col_div" routerLink="/mtutorialoptions">
+            <img src="assets\music.png" >
+            <ion-label>Musical Tutorials</ion-label>
+            </div>
+
+          <div class="col_div" routerLink="/library">
+            <img src="assets\library.png">
+            <ion-label>Library</ion-label>
+          </div>
+          <div class="col_div" routerLink="/piano">
+            <img src="assets\playPiano.png">
+            <ion-label>Piano</ion-label>
+          </div>
+        </ion-col>
+        <ion-col size="6" >
+          <div class="col_div" routerLink="/ptutorialoptions">
+            <img src="assets\piano.png">
+            <ion-label>Piano Tutorials</ion-label>
+          </div>
+          <div class="col_div" routerLink="/favourite">
+            <img src="assets\favourite.png">
+            <ion-label>Favourite</ion-label>
+          </div>
+          <div class="col_div" routerLink="/scoring">
+            <img src="assets\ai.png">
+            <ion-label>Scoring</ion-label>
+          </div>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+   </div>
+</ion-content>

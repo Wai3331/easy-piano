@@ -1,0 +1,38 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <body>
+
+    <div class ="buttons">
+       <ion-button *ngIf="!recording" shape="round" color = "danger"  class="record-button btn"  (click)="handleAddToRecording()">Record</ion-button>
+       <ion-button *ngIf="recording" shape="round" color = "danger"  class="record-button btn"  (click)="handleRemoveFromRecording()">Stop</ion-button>
+      <ion-button  color = "secondary"  class="btn"  routerLink="/piano">Piano (Sharp)</ion-button>
+  
+  
+    </div>
+    
+    <div class="piano">
+  
+      <div data-note="C" class="key white"> <ion-item color="transparent" lines="none"(click)="CallplayC3()"></ion-item><span class = "hint">C</span></div>
+      <div data-note="Db" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayDb()"> <div class="item-content">
+      </div></ion-item> <span class = "hint">Db</span> </div>
+      <div data-note="D" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayD3()"></ion-item>  <span class = "hint">D</span> </div>
+      <div data-note="Eb" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayEb()"> <div class="item-content">
+      </div></ion-item>  <span class = "hint">Eb</span> </div>
+      <div data-note="E" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayE3()"></ion-item>  <span class = "hint">E</span> </div>
+      <div data-note="F" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayF3()"></ion-item>  <span class = "hint">F</span> </div>
+      <div data-note="Gb" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayGb()"> <div class="item-content">
+      </div></ion-item>  <span class = "hint">Gb</span> </div>
+      <div data-note="G" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayG3()"></ion-item>  <span class = "hint">G</span> </div>
+      <div data-note="Ab" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayAb()"> <div class="item-content">
+      </div></ion-item>  <span class = "hint">Ab</span> </div>
+      <div data-note="A" class="key white"><ion-item color="transparent" lines="none"(click)=" CallplayA3()"></ion-item>  <span class = "hint">A</span> </div>
+      <div data-note="Bb" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayBb()"> <div class="item-content">
+      </div></ion-item>  <span class = "hint">Bb</span> </div>
+      <div data-note="B" class="key white"><ion-item color="transparent" lines="none"(click)=" CallplayB3()"></ion-item>  <span class = "hint">B</span> </div>
+      </div>
+    
+  </body>
+</ion-content>
