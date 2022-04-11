@@ -1,0 +1,56 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button  color="light"></ion-menu-button>    
+      <ion-title>Piano Tutorials</ion-title>
+    </ion-buttons>
+  <!-- SEARCH BAR -->
+  <app-searchbar></app-searchbar>
+  </div>
+  <ion-segment value="Videos">
+  <ion-segment-button  routerLink="/ptutorial" value="Articles">
+  <ion-label>Articles</ion-label>
+  </ion-segment-button>
+<ion-segment-button  routerLink="/ptutorial-video" value="Videos">
+<ion-label>Videos</ion-label>
+</ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/pianoV1.gif"  routerLink="/p-video1">
+      <ion-card-title routerLink="/p-video1">Learn To Play Piano Instantly: #1 Beginning Training (Pro Shortcuts)</ion-card-title>
+      <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+      <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card> 
+    <ion-card-header>
+  <img src="assets/pianoV2.gif" routerLink="/p-video2">
+      <ion-card-title routerLink="/p-video2">7 Days To Learning Piano (Beginner Lesson)</ion-card-title>
+      <i *ngIf="addedToFavourite1" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite1()"></i>
+      <i *ngIf="!addedToFavourite1" class="far fa-heart float-end" (click)="handleAddToFavourite1()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/pianoV3.gif" routerLink="/p-video3">
+      <ion-card-title routerLink="/p-video3">A Thousand Years - Christina Perri | BEGINNER PIANO TUTORIAL + SHEET MUSIC by Betacustic</ion-card-title>
+      <i *ngIf="addedToFavourite2" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite2()"></i>
+      <i *ngIf="!addedToFavourite2" class="far fa-heart float-end" (click)="handleAddToFavourite2()"></i>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+  <img src="assets/pianoV4.gif" routerLink="/p-video4">
+      <ion-card-title routerLink="/p-video4">TOP 10 Classical Songs - EASY Piano Tutorials by PlutaX</ion-card-title>
+      <i *ngIf="addedToFavourite3" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite3()"></i>
+      <i *ngIf="!addedToFavourite3" class="far fa-heart float-end" (click)="handleAddToFavourite3()"></i>
+    </ion-card-header>
+  </ion-card>
+</div>
+
+</ion-content>

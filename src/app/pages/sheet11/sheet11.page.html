@@ -1,0 +1,45 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-back-button color="light"></ion-back-button> 
+      <ion-title>Rolling In The Deep</ion-title>
+      <ion-button slot="end">
+        <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+        <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+      </ion-button>
+    </ion-buttons>
+
+  </div>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Rolling p1.jpg">
+      <img src="assets/Rolling p2.jpg">
+      <img src="assets/Rolling p3.jpg">
+      <img src="assets/Rolling p4.jpg">
+      <img src="assets/Rolling p5.jpg">
+      <img src="assets/Rolling p6.jpg">
+      <img src="assets/Rolling p7.jpg">
+      <img src="assets/Rolling p8.jpg">
+
+      <ion-card-title>Song Info</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+ <p>  Title: Rolling In The Deep</p>
+ <p> Artist: Adele</p>
+ <p>  Key: C Minor</p>
+ <p>  Metronome: 104</p>
+ <p>  Styles:	Pop</p>
+ <p> Difficulty: Medium</p>
+ <p> Page: 8</p>
+ <iframe width="300" height="315" src="https://www.youtube.com/embed/KSLgzOgwN7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-back-button color="light"></ion-back-button> 
+      <ion-title>Cry Your Heart Out</ion-title>
+      <ion-button slot="end">
+        <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+        <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+      </ion-button>
+    </ion-buttons>
+
+  </div>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Cry p1.jpg">
+      <img src="assets/Cry p2.jpg">
+      <img src="assets/Cry p3.jpg">
+      <img src="assets/Cry p4.jpg">
+      <img src="assets/Cry p5.jpg">
+      <img src="assets/Cry p6.jpg">
+
+      <ion-card-title>Song Info</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+ <p>  Title: Cry Your Heart Out</p>
+ <p> Artist: Adele</p>
+ <p>  Key: B Minor</p>
+ <p>  Metronome: 125</p>
+ <p>  Styles:	Pop</p>
+ <p> Difficulty: Medium</p>
+ <p> Page: 6</p>
+ <iframe width="300" height="315" src="https://www.youtube.com/embed/rKILzScjBVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <body onload='lockToLandscape()'>
+
+  <div class ="buttons">
+     <ion-button *ngIf="!recording" shape="round" color = "danger"  class="record-button btn"  (click)="handleAddToRecording()">Record</ion-button>
+     <ion-button *ngIf="recording" shape="round" color = "danger"  class="record-button btn"  (click)="handleRemoveFromRecording()">Stop</ion-button>
+    <ion-button  color = "secondary"  class="btn" routerLink="/piano2">Piano (Flat)</ion-button>
+
+
+  </div>
+  
+  <div class="piano">
+
+    <div data-note="C" class="key white"> <ion-item color="transparent" lines="none"(click)="CallplayC()"></ion-item><span class = "hint">C</span></div>
+    <div data-note="C#" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayCSharp()"> <div class="item-content">
+    </div></ion-item> <span class = "hint">C#</span> </div>
+    <div data-note="D" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayD()"></ion-item>  <span class = "hint">D</span> </div>
+    <div data-note="D#" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayDSharp()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">D#</span> </div>
+    <div data-note="E" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayE()"></ion-item>  <span class = "hint">E</span> </div>
+    <div data-note="F" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayF()"></ion-item>  <span class = "hint">F</span> </div>
+    <div data-note="F#" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayFSharp()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">F#</span> </div>
+    <div data-note="G" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayG()"></ion-item>  <span class = "hint">G</span> </div>
+    <div data-note="G#" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayGSharp()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">G#</span> </div>
+    <div data-note="A" class="key white"><ion-item color="transparent" lines="none"(click)=" CallplayA()"></ion-item>  <span class = "hint">A</span> </div>
+    <div data-note="A#" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayASharp()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">A#</span> </div>
+    <div data-note="B" class="key white"><ion-item color="transparent" lines="none"(click)=" CallplayB()"></ion-item>  <span class = "hint">B</span> </div>
+    <div data-note="C2" class="key white"><ion-item color="transparent" lines="none"(click)=" CallplayC2()"></ion-item>  <span class = "hint">C</span> </div>
+    <div data-note="C#2" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayCSharp2()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">C#</span> </div>
+    <div data-note="D2" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayD2()"></ion-item>  <span class = "hint">D</span> </div>
+    <div data-note="D#2" class="key black"><ion-item color="transparent" lines="none"(click)="CallplayDSharp2()"> <div class="item-content">
+    </div></ion-item>  <span class = "hint">D#</span> </div>
+    <div data-note="E2" class="key white"><ion-item color="transparent" lines="none"(click)="CallplayE2()"></ion-item>  <span class = "hint">E</span> </div>
+    </div>
+  
+  
+    <audio id="C3" src="assets/notes/C3.mp3"></audio>
+    <audio id="Db" src="assets/notes/Cb.mp3"></audio>
+    <audio id="D3" src="assets/notes/D3.mp3"></audio>
+    <audio id="Eb" src="assets/notes/Db.mp3"></audio>
+    <audio id="E3" src="assets/notes/E3.mp3"></audio>
+    <audio id="F3" src="assets/notes/F3.mp3"></audio>
+    <audio id="Gb" src="assets/notes/Fb.mp3"></audio>
+    <audio id="G3" src="assets/notes/G3.mp3"></audio>
+    <audio id="Ab" src="assets/notes/Gb.mp3"></audio>
+    <audio id="A3" src="assets/notes/A3.mp3"></audio>
+    <audio id="Bb" src="assets/notes/Ab.mp3"></audio>
+    <audio id="B3" src="assets/notes/B3.mp3"></audio>
+
+</body>
+</ion-content>

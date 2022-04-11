@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Tutorials', url: '/folder/Tutorials', icon: 'mail' },
-    { title: 'Database', url: '/folder/Database', icon: 'paper-plane' },
-    { title: 'Piano', url: '/folder/Piano', icon: 'heart' },
-    { title: 'Scoring', url: '/folder/Scoring', icon: 'archive' },
+    { title: 'Dashboard', url: 'home', icon: 'pie-chart' },
+    { title: 'Musical Tutorials', url: 'mtutorialoptions', icon: 'school' },
+    { title: 'Piano Tutorials', url: 'ptutorialoptions', icon: 'school' },
+    { title: 'Library', url: 'library', icon: 'library' },
+    { title: 'Favourite', url: 'favourite', icon: 'heart' },
+    { title: 'Piano', url: 'piano', icon: 'musical-notes' },
+    { title: 'Scoring', url: 'scoring', icon: 'chatbubbles' },
   ];
-  public labels = ['Tutorials', 'Database', 'Piano', 'Scoring'];
   constructor() {}
 }

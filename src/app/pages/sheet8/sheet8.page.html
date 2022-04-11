@@ -1,0 +1,44 @@
+<ion-header>
+  <div class="grad_back">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-back-button color="light"></ion-back-button> 
+      <ion-title>Silence</ion-title>
+      <ion-button slot="end">
+        <i *ngIf="addedToFavourite" class="fas fa-heart float-end" (click)="handleRemoveFromFavourite()"></i>
+        <i *ngIf="!addedToFavourite" class="far fa-heart float-end" (click)="handleAddToFavourite()"></i>
+      </ion-button>
+    </ion-buttons>
+
+  </div>
+</ion-header>
+
+<ion-content>
+<div class="main_content_div">
+  <ion-card>
+    <ion-card-header>
+      <img src="assets/Silence p1.jpg">
+      <img src="assets/Silence p2.jpg">
+      <img src="assets/Silence p3.jpg">
+      <img src="assets/Silence p4.jpg">
+      <img src="assets/Silence p5.jpg">
+      <img src="assets/Silence p6.jpg">
+      <img src="assets/Silence p7.jpg">
+      <img src="assets/Silence p8.jpg">
+      <ion-card-title>Song Info</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+ <p>  Title: 	Silence</p>
+ <p> Artist: Marshmello feat Khalid</p>
+ <p>  Key: C# Major</p>
+ <p>  Metronome: 144</p>
+ <p>  Styles:	Pop</p>
+ <p> Difficulty: Medium</p>
+ <p> Page: 8</p>
+ <iframe width="300" height="315" src="https://www.youtube.com/embed/GAoYqIMiU1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ion-card-content>
+  </ion-card>
+
+</div>
+
+</ion-content>

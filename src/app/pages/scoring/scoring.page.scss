@@ -1,0 +1,54 @@
+ion-header{
+    background-color: rgb(231, 231, 231);
+    .grad_back{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        background: #10154ee1; 
+    ion-title{
+        display: block;
+        color: rgb(231, 231, 231);
+        text-align: left;
+    }
+}
+}
+
+ion-footer{
+    background: #10154ee1; 
+}
+
+ion-content{
+    --background: #030629e1;
+}
+.message{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    white-space: pre-wrap;
+}
+.ai{
+    background-color: var(--ion-color-tertiary);
+    color: #fff;
+
+}
+
+.my{
+    background-color: var(--ion-color-secondary);
+    color: #fff;
+
+}
+
+.message-input{
+    width: 100%;
+    border: 1px solid var (--ion-color-medium);
+    border-radius: 10px;
+    background: #fff;
+    resize: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.msg-btn{
+    --padding-start: 0.5em;
+    --padding-end: 0.5em;
+}
